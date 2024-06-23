@@ -5,17 +5,10 @@
     createdAt: Date,
     stock: number,
     size?: Sizes,
-  }
+  };
 
   const products: Product[]= [];//Asegura que el array cumpla con el tipado de objeto
-
-  const addProduct = (data:{
-    title: string,
-    createdAt: Date,
-    stock: number,
-    size?: Sizes,
-
-  })=>{
+  const addProduct = (data:Product) => {
     products.push(data);
   }
 
